@@ -175,38 +175,38 @@
                 const items = document.querySelector(".items");
                 let string = "";
                 let listFood = [];
-                if (categoryID == 1010){ // 1010 = all
+                if (categoryID === 1010){ // 1010 = all
                     listFood = resturantMenu;
                 } else
-                if (categoryID == 65){  // 65 = mainFood
+                if (categoryID === 65){  // 65 = mainFood
                     items.innerHTML = "";
                     listFood = resturantMenu.filter(search);
                     function search(item){
                         return item.categoryID === 65;
                     };         
                 } else
-                if (categoryID == 66){  // 66 = starter
+                if (categoryID === 66){  // 66 = starter
                     items.innerHTML = "";
                     listFood = resturantMenu.filter(search);
                     function search(item){
                         return item.categoryID === 66;
                     };    
                 } else
-                if (categoryID == 67){  // 67 = desert
+                if (categoryID === 67){  // 67 = desert
                     items.innerHTML = "";
                     listFood = resturantMenu.filter(search);
                     function search(item){
                         return item.categoryID === 67;
                     };    
                 } else
-                if (categoryID == 68){  // 68 = hotDrink
+                if (categoryID === 68){  // 68 = hotDrink
                     items.innerHTML = "";
                     listFood = resturantMenu.filter(search);
                     function search(item){
                         return item.categoryID === 68;
                     };    
                 } else
-                if (categoryID == 69){  // 69 = coldDrink
+                if (categoryID === 69){  // 69 = coldDrink
                     items.innerHTML = "";
                     listFood = resturantMenu.filter(search);
                     function search(item){
