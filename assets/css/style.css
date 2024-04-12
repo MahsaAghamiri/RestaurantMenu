@@ -3,7 +3,8 @@
     background-color: #fff;
     position: fixed;
     z-index: 10;
-    color: #000;    
+    color: #000;   
+    cursor: pointer;
 }
 .header-wrapper{
     width: 100%;
@@ -18,8 +19,6 @@
 }
 .header .header-wrapper:hover .menu {
     display: block;
-    cursor: pointer;
-
 }
 .header .header-wrapper .menu {
     display: none;
@@ -28,7 +27,6 @@
     display: flex;
     gap: 35px;
 }
-
 .header .header-wrapper .menu ul li button{
     background: none;
 	color: inherit;
@@ -71,7 +69,3 @@
 .menu-list .items .text-food h4 .price-food{
     color: rgb(254, 161, 22);
 }
-/* .menu-list .items .text-food p{
-    font-style: italic;
-    font-weight: 200;
-} */
