@@ -1,0 +1,77 @@
+.header{
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    z-index: 10;
+    color: #000;    
+}
+.header-wrapper{
+    width: 100%;
+    padding: 20px 60px;
+}
+.header .header-wrapper h1{
+    border-bottom: 1px solid rgb(222, 226, 230);
+    display: inline-block;
+    padding-left: 80px;
+    padding-right: 80px;
+
+}
+.header .header-wrapper:hover .menu {
+    display: block;
+    cursor: pointer;
+
+}
+.header .header-wrapper .menu {
+    display: none;
+}
+.header .header-wrapper .menu ul {
+    display: flex;
+    gap: 35px;
+}
+
+.header .header-wrapper .menu ul li button{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    font-size: 2rem;
+    padding: 7px;
+    text-transform: capitalize;
+}
+.header .header-wrapper .menu ul li button:hover{
+    border: solid 2px rgb(254, 161, 22);
+    border-radius: 20px;
+}
+.menu-list{
+    padding: 140px 60px 0 60px;
+    font-size: 2rem;
+}
+.menu-list .items .img-food.img-size{
+    width: 160px;
+    height: 120px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.menu-list .items .text-food {
+    width: 100%;
+    padding-left: 10px;
+}
+.menu-list .items .text-food h4{
+    border-bottom: 1px solid rgb(222, 226, 230);
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.menu-list .items .text-food p{
+    font-size: 1.6rem;
+    font-style: italic;
+}
+.menu-list .items .text-food h4 .price-food{
+    color: rgb(254, 161, 22);
+}
+/* .menu-list .items .text-food p{
+    font-style: italic;
+    font-weight: 200;
+} */

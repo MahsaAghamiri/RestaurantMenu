@@ -1,0 +1,226 @@
+<html>
+    <head>
+        <link href="https://fonts.go ogleapis.com/css?family=Mukta+Mahee:200,300,400|Abril+Fatface:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Mukta+Mahee:wght@200;300;400;500;600;700;800&family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/fontawsome/brands.css"/>
+        <link rel="stylesheet" href="assets/css/fontawsome/fontawesome.css"/>
+        <link rel="stylesheet" href="assets/css/fontawsome/regular.css"/>
+        <link rel="stylesheet" href="assets/css/fontawsome/solid.css"/>
+        <link rel="stylesheet" href="assets/css/general.css"/>
+        <link rel="stylesheet" href="assets/css/style.css"/>
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-wrapper text-align-center container">
+                <h1 class="pb-1">Resturant Menu</h1>
+                <div class="menu pt-6">
+                    <ul class="d-flex justify-center">
+                        <li><button onclick="getMenu(1010)" class="d-flex flex-column align-center"><span>All</span><img src="assets/images/b2.PNG"/></button></li>
+                        <li><button onclick="getMenu(65)" class="d-flex flex-column align-center"><span>Main Food</span><img src="assets/images/b2.PNG"/></button></li>
+                        <li><button onclick="getMenu(66)" class="d-flex flex-column align-center"><span>Starter</span><img src="assets/images/b3.PNG"/></button></li>
+                        <li><button onclick="getMenu(67)" class="d-flex flex-column align-center"><span>Desert</span><img src="assets/images/b3.PNG"/></button></li>
+                        <li><button onclick="getMenu(68)" class="d-flex flex-column align-center"><span>Hot Drink</span><img src="assets/images/b1.PNG"/></button></li>
+                        <li><button onclick="getMenu(69)" class="d-flex flex-column align-center"><span>Cold drink</span><img src="assets/images/b1.PNG"/></button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="menu-list">
+            <div class="container">
+                    <div class="items row pt-6">
+
+                    </div>     
+            </div>
+        </div>
+        <script>
+            let resturantMenu = [
+                {
+                    name: "main Food 1",
+                    description: "A brief description of the food",
+                    price: 115,
+                    image: "assets/images/m1.jpg",
+                    categoryID: 65,
+                    categoryName: "mainFood"
+                },
+                {
+                    name: "main Food 2",
+                    description: "A brief description of the food",
+                    price: 115,
+                    image: "assets/images/m2.jpg",
+                    categoryID: 65,
+                    categoryName: "mainFood"
+                },
+                {
+                    name: "main Food 3",
+                    description: "A brief description of the food",
+                    price: 115,
+                    image: "assets/images/m3.jpg",
+                    categoryID: 65,
+                    categoryName: "mainFood"
+                },
+                {
+                    name: "main Food 4",
+                    description: "A brief description of the food",
+                    price: 115,
+                    image: "assets/images/m4.jpg",
+                    categoryID: 65,
+                    categoryName: "mainFood"
+                }, 
+                {
+                    name: "main Food 5",
+                    description: "A brief description of the food",
+                    price: 115,
+                    image: "assets/images/m5.jpg",
+                    categoryID: 65,
+                    categoryName: "mainFood"
+                },
+                {
+                    name: "starter 1",
+                    description: "A brief description of the food",
+                    price: 115,
+                    image: "assets/images/starter1.jpg",
+                    categoryID: 66,
+                    categoryName: "starter"
+                },
+                {
+                    name: "starter 2",
+                    description: "A brief description of the food",
+                    price: 115,
+                    image: "assets/images/s1.jpg",
+                    categoryID: 66,
+                    categoryName: "starter"
+                }, 
+                {
+                    name: "starter 3",
+                    description: "A brief description of the food",
+                    price: 115,
+                    image: "assets/images/s2.jpg",
+                    categoryID: 66,
+                    categoryName: "starter"
+                },  
+                {
+                    name: "desert 1",
+                    description: "A brief description of the food",
+                    price: 115,
+                    image: "assets/images/d1.jpg",
+                    categoryID: 67,
+                    categoryName: "desert"
+                },
+                {
+                    name: "desert 2",
+                    description: "A brief description of the food",
+                    price: 115,
+                    image: "assets/images/d2.jpg",
+                    categoryID: 67,
+                    categoryName: "desert"
+                },
+                {
+                    name: "desert 3",
+                    description: "A brief description of the food",
+                    price: 115,
+                    image: "assets/images/d3.jpg",
+                    categoryID: 67,
+                    categoryName: "desert"
+                },
+                {
+                    name: "Drink 1",
+                    description: "A brief description of the food",
+                    price: 115,
+                    image: "assets/images/h2.jpg",
+                    categoryID: 68,
+                    categoryName: "hotDrink"
+                }, 
+                {
+                    name: "Drink 2",
+                    description: "A brief description of the food",
+                    price: 115,
+                    image: "assets/images/h1.jpg",
+                    categoryID: 68,
+                    categoryName: "hotDrink"
+                }, 
+                {
+                    name: "cold Drink 1",
+                    description: "A brief description of the food",
+                    price: 115,
+                    image: "assets/images/c1.jpg",
+                    categoryID: 69,
+                    categoryName: "colddrink"
+                }, 
+                {
+                    name: "cold Drink 2",
+                    description: "A brief description of the food",
+                    price: 115,
+                    image: "assets/images/c2.jpg",
+                    categoryID: 69,
+                    categoryName: "colddrink"
+                }, 
+                {
+                    name: "cold Drink 3",
+                    description: "A brief description of the food",
+                    price: 115,
+                    image: "assets/images/c3.jpg",
+                    categoryID: 69,
+                    categoryName: "colddrink"
+                }, 
+                {
+                    name: "coldDrink 4",
+                    description: "A brief description of the food",
+                    price: 115,
+                    image: "assets/images/c4.jpg",
+                    categoryID: 69,
+                    categoryName: "colddrink"
+                }
+            ]
+            function getMenu(categoryID){
+                const items = document.querySelector(".items");
+                let string = "";
+                let listFood = [];
+                if (categoryID == 1010){ // 1010 = all
+                    listFood = resturantMenu;
+                } else
+                if (categoryID == 65){  // 65 = mainFood
+                    items.innerHTML = "";
+                    listFood = resturantMenu.filter(search);
+                    function search(item){
+                        return item.categoryID === 65;
+                    };         
+                } else
+                if (categoryID == 66){  // 66 = starter
+                    items.innerHTML = "";
+                    listFood = resturantMenu.filter(search);
+                    function search(item){
+                        return item.categoryID === 66;
+                    };    
+                } else
+                if (categoryID == 67){  // 67 = desert
+                    items.innerHTML = "";
+                    listFood = resturantMenu.filter(search);
+                    function search(item){
+                        return item.categoryID === 67;
+                    };    
+                } else
+                if (categoryID == 68){  // 68 = hotDrink
+                    items.innerHTML = "";
+                    listFood = resturantMenu.filter(search);
+                    function search(item){
+                        return item.categoryID === 68;
+                    };    
+                } else
+                if (categoryID == 69){  // 69 = coldDrink
+                    items.innerHTML = "";
+                    listFood = resturantMenu.filter(search);
+                    function search(item){
+                        return item.categoryID === 69;
+                    };    
+                } 
+                for(let i = 0; i < listFood.length; i++){
+                        string += "<div class='col-6 d-flex justify-center'><img src="+ listFood[i].image 
+                            + " class='img-food img-size'/><div class='text-food'><h4 class='d-flex space-between'><span>"+ listFood[i].name
+                                 +"</span><span class='price-food'>"+ '$ ' + listFood[i].price +"</span></h4><p>"+ listFood[i].description +"</p></div></div>";
+                    }
+                    items.innerHTML = string;
+            }
+            getMenu(1010);
+        </script>
+    </body>
+</html>
